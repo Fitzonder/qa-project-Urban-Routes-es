@@ -74,10 +74,10 @@ python -m venv env
 
 3. Activate the environment
    
-# Mac/Linux
+- Mac/Linux
 source env/bin/activate
 
-# Windows
+- Windows
 env\Scripts\activate
 
 4. Install dependencies
@@ -87,26 +87,22 @@ Example requirements.txt
 selenium==4.x.x
 pytest==x.x.x
 
-6. Run the tests
+5. Run the tests
 pytest main.py
 
 ## ✅ Key Skills Demonstrated
-End-to-End (E2E) Testing
-Test Automation with Selenium
-Test Case Design
-UI Testing
-Debugging and Issue Detection
-Test Data Management
+* End-to-End (E2E) Testing
+* Test Automation with Selenium
+* Test Case Design
+* UI Testing
+* Debugging and Issue Detection
+* Test Data Management
 
 ## 🤝 Contributions
 
 Contributions are welcome. To propose improvements:
 
-Fork the repository
-Create a new branch
-Implement your changes
-Submit a pull request
-
-👤 Author
-
-Carlos Lenis
+1. Fork the repository
+2. Create a new branch
+3. Implement your changes
+4. Submit a pull request
