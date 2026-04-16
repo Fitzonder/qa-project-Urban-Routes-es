@@ -1,71 +1,99 @@
-﻿# Urban Routes Automated Testing project
+﻿# 🚗 Urban Routes Automated Testing Project
+ 
+## 📌 Description
 
-## Descripción del Proyecto
+This project focuses on building an end-to-end (E2E) automated testing framework for the Urban Routes web application, a ride-hailing platform.
 
-Este proyecto tiene como objetivo implementar un framework de automatización de pruebas funcionales end-to-end para la aplicación web Urban Routes, una plataforma de solicitud de transporte bajo demanda.
+The tests are developed using Python and Selenium WebDriver to validate critical user flows such as route setup, phone authentication, service requests, and payment method management.
 
-Las pruebas se desarrollan en Python con Selenium WebDriver, permitiendo validar de forma automatizada flujos críticos como la configuración de rutas, autenticación por número telefónico, solicitud de servicios y gestión de métodos de pago.
+This approach ensures systematic validation of the application's functionality and early detection of regressions.
 
-Este enfoque asegura la verificación sistemática de la integridad funcional y la detección temprana de regresiones en la aplicación.
+## 🎯 Project Objectives
+Automate end-to-end testing of critical user flows
+Validate route configuration and service selection
+Verify phone number authentication process
+Ensure correct handling of payment methods
+Detect functional issues and prevent regressions
+🛠️ Technologies & Tools
+Programming Language: Python
+Automation Framework: Selenium WebDriver
+Testing Framework: Pytest
+Browser: Microsoft Edge
+Driver: EdgeDriver
 
-## Estructura del proyecto:
-
+## 📁 Project Structure
 qa-project-Urban-Routes-es/
+│
+├── data.py              # Test data and configuration values
+├── CodeRetrieve.py      # Helper function to retrieve verification codes
+├── PageLocators.py      # UI locators and interaction methods
+├── main.py              # Automated test cases
+📄 File Overview
+🔹 data.py
 
--- data.py              # Contiene los datos utilizados en las pruebas
+Contains test data such as:
 
--- CodeRetrieve.py      # Funcion auxiliar - obtención del código de confirmación
+Base URL
+Origin and destination addresses
+Phone numbers
+Payment details
+🔹 CodeRetrieve.py
+Implements a helper method to retrieve verification codes from network logs
+Supports automation of phone authentication flows
+🔹 PageLocators.py
+Defines UI elements and locators
+Contains methods to interact with the application
+Covers actions such as:
+Selecting routes
+Adding payment methods
+Interacting with UI components
+🔹 main.py
 
--- PageLocators.py      # Localizadores y métodos para interactuar con la página web
+Contains the TestUrbanRoutes test suite, including scenarios such as:
 
--- main.py              # Pruebas automatizadas
+Route configuration
+Taxi selection (Comfort option)
+Phone number input and verification
+Payment method addition
+Adding notes for the driver
+Selecting additional requirements (e.g., blankets, ice cream)
 
-## Explicación de los Archivos
+## 🚀 How to Run the Tests
+1. Clone the repository
+git clone https://github.com/Fitzonder/qa-project-Urban-Routes-es
+2. Create a virtual environment
+python -m venv env
+3. Activate the environment
+# Mac/Linux
+source env/bin/activate
 
-    data.py: Contiene valores como urban_routes_url, address_from, address_to, phone_number, card_number, etc. que se usan en los tests.
+# Windows
+env\Scripts\activate
+4. Install dependencies
+pip install -r requirements.txt
+Example requirements.txt
+selenium==4.x.x
+pytest==x.x.x
+5. Run the tests
+pytest main.py
 
-    CodeRetrieve.py: Contiene un metodo auxiliar el cual permite obtener códigos de verificación desde los logs de la red.
+## ✅ Key Skills Demonstrated
+End-to-End (E2E) Testing
+Test Automation with Selenium
+Test Case Design
+UI Testing
+Debugging and Issue Detection
+Test Data Management
 
-    PageLocators.py:  Este archivo define los elementos de la interfaz de usuario y las acciones que pueden ejecutarse sobre ellos. Incluye los localizadores de la página y métodos para interactuar con componentes como la selección de origen y destino, la adición de métodos de pago y otras operaciones dentro del flujo funcional.
+## 🤝 Contributions
 
-    main.py: Contiene la clase TestUrbanRoutes, que agrupa las pruebas. Las pruebas incluyen escenarios como:
-        Configuración de rutas
-        Selección de taxi (opción de confort)
-        Agregar número de teléfono y confirmarlo
-        Agregar un método de pago
-        Agregar un mensaje para el conductor
-        Seleccionar requisitos adicionales (como mantas y helados)
+Contributions are welcome. To propose improvements:
 
-## Tecnologías y Técnicas Utilizadas
+Fork the repository
+Create a new branch
+Implement your changes
+Submit a pull request
 
-- **Python**: Lenguaje de programación utilizado para escribir los scripts de prueba.
-- **Selenium WebDriver**: Herramienta de automatización para la interacción con la interfaz de usuario de la aplicación web.
-- **Edge**: Navegador utilizado para ejecutar las pruebas.
-- **EdgeDriver**: Driver específico para controlar Edge mediante Selenium.
-- **pytest**: Framework de pruebas para ejecutar y organizar los casos de prueba.
+👤 Author
 
-## Clonar el repositorio:
-- git clone https://github.com/Fitzonder/qa-project-Urban-Routes-es
-
-## Crear un entorno virtual:
-- python -m venv env
-- source env/bin/activate  # En Windows usa `env\Scripts\activate`
-
-## Instalar las dependencias:
-- pip install selenium pytest
-
-## Asegúrate de tener un archivo requirements.txt que contenga:
-- selenium==4.x.x
-- pytest==x.x.x
-- Edge
-- EdgeDriver
-
-## Ejecución de las Pruebas
-
-- pytest tests/main.py
-
-## Contribuciones
-
-Las contribuciones al proyecto son bienvenidas. Si deseas proponer mejoras o nuevas funcionalidades, realiza un fork del repositorio, implementa los cambios correspondientes y envía un pull request para su revisión e integración.
-
-Autor del proyecto: Carlos Lenis
+Carlos Lenis
