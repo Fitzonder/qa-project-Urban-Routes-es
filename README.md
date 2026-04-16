@@ -33,6 +33,7 @@ qa-project-Urban-Routes-es/
 ## 📄 File Overview
 
 🔹 data.py
+
 Contains test data such as:
 * Base URL
 * Origin and destination addresses
@@ -42,6 +43,7 @@ Contains test data such as:
 🔹 CodeRetrieve.py
 * Implements a helper method to retrieve verification codes from network logs
 * Supports automation of phone authentication flows
+  
 🔹 PageLocators.py
 * Defines UI elements and locators
 * Contains methods to interact with the application
@@ -49,6 +51,7 @@ Contains test data such as:
 * Selecting routes
 * Adding payment methods
 * Interacting with UI components
+  
 🔹 main.py
 
 Contains the TestUrbanRoutes test suite, including scenarios such as:
@@ -62,21 +65,29 @@ Contains the TestUrbanRoutes test suite, including scenarios such as:
 
 ## 🚀 How to Run the Tests
 1. Clone the repository
+   
 git clone https://github.com/Fitzonder/qa-project-Urban-Routes-es
+
 2. Create a virtual environment
+   
 python -m venv env
+
 3. Activate the environment
+   
 # Mac/Linux
 source env/bin/activate
 
 # Windows
 env\Scripts\activate
+
 4. Install dependencies
 pip install -r requirements.txt
+
 Example requirements.txt
 selenium==4.x.x
 pytest==x.x.x
-5. Run the tests
+
+6. Run the tests
 pytest main.py
 
 ## ✅ Key Skills Demonstrated
