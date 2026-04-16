@@ -31,32 +31,34 @@ qa-project-Urban-Routes-es/
 ├── main.py              # Automated test cases
 
 ## 📄 File Overview
+
 🔹 data.py
 Contains test data such as:
-Base URL
-Origin and destination addresses
-Phone numbers
-Payment details
+* Base URL
+* Origin and destination addresses
+* Phone numbers
+* Payment details
+
 🔹 CodeRetrieve.py
-Implements a helper method to retrieve verification codes from network logs
-Supports automation of phone authentication flows
+* Implements a helper method to retrieve verification codes from network logs
+* Supports automation of phone authentication flows
 🔹 PageLocators.py
-Defines UI elements and locators
-Contains methods to interact with the application
-Covers actions such as:
-Selecting routes
-Adding payment methods
-Interacting with UI components
+* Defines UI elements and locators
+* Contains methods to interact with the application
+* Covers actions such as:
+* Selecting routes
+* Adding payment methods
+* Interacting with UI components
 🔹 main.py
 
 Contains the TestUrbanRoutes test suite, including scenarios such as:
 
-Route configuration
-Taxi selection (Comfort option)
-Phone number input and verification
-Payment method addition
-Adding notes for the driver
-Selecting additional requirements (e.g., blankets, ice cream)
+* Route configuration
+* Taxi selection (Comfort option)
+* Phone number input and verification
+* Payment method addition
+* Adding notes for the driver
+* Selecting additional requirements (e.g., blankets, ice cream)
 
 ## 🚀 How to Run the Tests
 1. Clone the repository
