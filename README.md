@@ -9,17 +9,18 @@ The tests are developed using Python and Selenium WebDriver to validate critical
 This approach ensures systematic validation of the application's functionality and early detection of regressions.
 
 ## 🎯 Project Objectives
-Automate end-to-end testing of critical user flows
-Validate route configuration and service selection
-Verify phone number authentication process
-Ensure correct handling of payment methods
-Detect functional issues and prevent regressions
-🛠️ Technologies & Tools
-Programming Language: Python
-Automation Framework: Selenium WebDriver
-Testing Framework: Pytest
-Browser: Microsoft Edge
-Driver: EdgeDriver
+* Automate end-to-end testing of critical user flows
+* Validate route configuration and service selection
+* Verify phone number authentication process
+* Ensure correct handling of payment methods
+* Detect functional issues and prevent regressions
+
+## 🛠️ Technologies & Tools
+* Programming Language: Python
+* Automation Framework: Selenium WebDriver
+* Testing Framework: Pytest
+* Browser: Microsoft Edge
+* Driver: EdgeDriver
 
 ## 📁 Project Structure
 qa-project-Urban-Routes-es/
@@ -28,11 +29,10 @@ qa-project-Urban-Routes-es/
 ├── CodeRetrieve.py      # Helper function to retrieve verification codes
 ├── PageLocators.py      # UI locators and interaction methods
 ├── main.py              # Automated test cases
-📄 File Overview
+
+## 📄 File Overview
 🔹 data.py
-
 Contains test data such as:
-
 Base URL
 Origin and destination addresses
 Phone numbers
